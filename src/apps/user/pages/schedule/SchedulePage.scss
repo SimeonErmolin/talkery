@@ -1,0 +1,120 @@
+.template-specialist-card {
+  width: 381px;
+
+  .scheduled-date {
+    margin-top: 23px;
+    color: #262626;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .specialist-card {
+    border-radius: 20px;
+    background: #fff;
+    margin-top: 7px;
+    padding: 21px;
+    font-style: normal;
+    font-weight: 500;
+
+    .specialist-content {
+      display: flex;
+      justify-content: space-between;
+
+      .specialist-about {
+        display: flex;
+        gap: 11px;
+
+        .avatar {
+          border-radius: 35px;
+          width: 45px;
+          height: 45px;
+          object-fit: cover;
+          object-position: center;
+          vertical-align: middle;
+
+          &.cancelled {
+            filter: grayscale(100%);
+          }
+        }
+
+        .specialist-name {
+          color: #000;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 20px;
+
+          &.cancelled {
+            color: #7a7a7a;
+          }
+        }
+
+        .specialist-role {
+          color: #5c5b5b;
+          font-size: 13px;
+          line-height: 20px;
+
+          &.cancelled {
+            color: #7a7a7a;
+          }
+        }
+      }
+
+      .session-status-wrapper {
+        .session-status {
+          margin-left: auto;
+          font-size: 13px;
+
+          &.success {
+            color: #7fbd38;
+          }
+
+          &.cancelled {
+            color: #7a7a7a;
+          }
+        }
+
+        .context-menu {
+          color: #262626;
+          margin-left: auto;
+          cursor: pointer;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: 2.4px;
+
+          &:hover {
+            color: rgba(38, 38, 38, 0.7);
+          }
+        }
+      }
+    }
+
+    .schedule-info {
+      display: flex;
+      margin-top: 13px;
+
+      .scheduled-time {
+        color: #262626;
+        text-align: center;
+        font-size: 15px;
+
+        &.cancelled {
+          color: #7a7a7a;
+        }
+      }
+
+      .session-mode {
+        color: #7fbd38;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 2px;
+        margin-left: 10px;
+      }
+    }
+
+    .button {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,336 @@
+.specialist-page {
+  width: 381px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px auto auto;
+}
+
+.specialist-page__subtitle {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+
+  &--title {
+    margin-top: 15px;
+  }
+
+  &--for-you {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+}
+
+.specialist-card-container {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 17px;
+
+  &__tabs {
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  .description-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    &__tab {
+      width: 100%;
+      padding: 10px;
+      color: #a3a3a3;
+      font-size: 15px;
+      font-weight: 600;
+
+      border-bottom: 2px solid #e9e9e9;
+
+      &--active {
+        color: #262626;
+        border-bottom: 2px solid #474747;
+      }
+    }
+  }
+
+  .specialist-tags {
+    &__subtitle {
+      margin-top: 22px;
+    }
+
+    &__container {
+      display: flex;
+      gap: 11px;
+      margin: 12px 0;
+
+      &--item {
+        height: 30px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 24px;
+        border: 1px solid #ededed;
+        background: #ededed;
+        color: #262626;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .general-information {
+    &__item {
+      display: flex;
+
+      :first-child {
+        margin-top: 17px;
+      }
+
+      &--comment {
+        width: 18px;
+        height: 18px;
+
+        margin-right: 19px;
+      }
+
+      &--flag {
+        width: 18.9px;
+        height: 21px;
+
+        margin-right: 18px;
+      }
+
+      &--title {
+        color: #444;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      &--info {
+        color: #323232;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .experience-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 23px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e0e0e0;
+
+      &:last-child {
+        border: none;
+      }
+
+      &--title {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+          gap: 5px;
+        }
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+
+        p {
+          color: #000;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+
+        button {
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      &--text {
+        color: #262626;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+      }
+
+      &--certificates {
+        margin-top: 23px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: 73px;
+          height: 55px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  &.for-you-container {
+    height: 241px;
+    background-image: url('../../../../assets/icons/specialist-page/green-shield.svg');
+    background-repeat: no-repeat;
+    background-size: 255px 210px;
+    background-position: 130px 31px;
+
+    .for-you {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+
+      margin-top: 27px;
+      margin-bottom: 28px;
+
+      &__item {
+        display: flex;
+        gap: 5px;
+
+        &--img {
+          width: 17.28px;
+          height: 18px;
+          margin-right: 2px;
+        }
+
+        &--text {
+          color: #262626;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.specialist-reviews {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+
+  .review-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &__user {
+      display: flex;
+      gap: 10px;
+
+      &--avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #f7f8f6;
+        border: 1px solid rgba(190, 190, 190, 0.2);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #262626;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      &--name {
+        color: #444;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      &--date {
+        color: #666;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
+    &__stars {
+      width: 80px;
+      height: 16px;
+      background-image: url('../../../../assets/icons/specialist-page/5stars.png');
+    }
+  }
+
+  .specialist-reviews__text {
+    display: block;
+    margin-bottom: 24px;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+}
+
+.review-modal {
+  .specialist-reviews {
+    .review-header {
+      margin-top: 24px;
+    }
+
+    pre {
+      border-bottom: 1px solid #e9e9e9;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.specialist-video {
+  margin: 0 auto;
+  width: 373px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-image: url('../../../../assets/icons/specialist-page/placeholder-video.jpg');
+
+  &__play-btn {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background-image: url('../../../../assets/icons/specialist-page/circle.png');
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 27px;
+      height: 27px;
+
+      background-image: url('../../../../assets/icons/specialist-page/triangle.png');
+    }
+  }
+}

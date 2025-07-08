@@ -1,0 +1,43 @@
+.tabs {
+  display: flex;
+  width: 381px;
+  gap: 41px;
+
+  &.second {
+    margin-top: 40px;
+  }
+
+  button {
+    padding: 0;
+    margin-bottom: 7px;
+    color: #a3a3a3;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+
+    &.active {
+      color: #333;
+    }
+
+    .new {
+      position: absolute;
+      top: -20px;
+      right: -24px;
+      width: 60px;
+      height: 16px;
+      border-radius: 4px;
+      background: #73c1ff;
+
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+
+      color: #fff;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+}

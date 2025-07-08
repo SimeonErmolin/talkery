@@ -1,0 +1,144 @@
+.catalog-card--skeleton {
+  width: 381px;
+  height: 320px;
+  background: #ffffff;
+  border-radius: 25px;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  width: 381px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 25px;
+
+  &.best-match {
+    outline: 2px solid rgba(77, 197, 145, 0.4);
+  }
+  &.recommended {
+    outline: 2px solid rgba(33, 150, 243, 0.4);
+  }
+  &.specialist-card {
+    outline: none;
+  }
+
+  &__header {
+    display: flex;
+    gap: 20px;
+
+    .catalog-card__image {
+      position: relative;
+
+      .image-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+        background: #f7f7f7;
+      }
+
+      .image-play {
+        cursor: pointer;
+        position: absolute;
+        left: 8px;
+        bottom: 8px;
+      }
+    }
+
+    .catalog-card__info {
+      .catalog-card__name {
+        display: flex;
+        margin-bottom: 5px;
+
+        h3 {
+          margin-right: 8px;
+          color: #262626;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19.2px;
+        }
+      }
+
+      .catalog-card__experience {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      .catalog-card__specialties {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 8px;
+        color: #555;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+
+        .specialty {
+          border-radius: 7px;
+          background: #f7f7f7;
+          padding: 0 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .catalog-card__stats {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .catalog-card__stat {
+          display: flex;
+
+          img {
+            margin-right: 6px;
+          }
+
+          p {
+            color: #000;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__achievement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    padding: 10px 90px 10px 102.02px;
+    gap: 3.98px;
+    border-radius: 10px;
+    background: #f7f7f7;
+
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.14px;
+    }
+
+    .best-match {
+      color: #2ab97b;
+    }
+
+    .recommended {
+      color: #2196f3;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-weight: 400;
+  }
+}
