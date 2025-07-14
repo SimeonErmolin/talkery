@@ -4,7 +4,7 @@ export const getCorrespondenceById = async (id) => {
       id: 1,
       name: 'Данило',
       online: false,
-      avatar: '/src/assets/messages/danilo.jpg',
+      avatar: '/assets/messages/danilo.jpg',
       date: '19 лютого',
       messages: [
         {
@@ -17,7 +17,7 @@ export const getCorrespondenceById = async (id) => {
       id: 2,
       name: 'Людмила',
       online: true,
-      avatar: '/src/assets/messages/ludmila.jpg',
+      avatar: '/assets/messages/ludmila.jpg',
       date: '8 лютого',
       messages: [
         {
@@ -36,7 +36,7 @@ export const getCorrespondenceById = async (id) => {
       id: 3,
       name: 'Юлія',
       online: false,
-      avatar: '/src/assets/messages/julia.jpg',
+      avatar: '/assets/messages/julia.jpg',
       date: '07 лютого',
       messages: [
         {
@@ -69,7 +69,7 @@ export const getCorrespondenceById = async (id) => {
       id: 4,
       name: 'Ірина',
       online: true,
-      avatar: '/src/assets/messages/irina.jpg',
+      avatar: '/assets/messages/irina.jpg',
       date: '7 лютого',
       messages: [
         {
@@ -84,7 +84,7 @@ export const getCorrespondenceById = async (id) => {
       id: 5,
       name: 'Олександр Немцов',
       online: false,
-      avatar: '/src/assets/messages/oleksandr.jpg',
+      avatar: '/assets/messages/oleksandr.jpg',
       date: '19 лютого',
       messages: [
         {
@@ -110,7 +110,7 @@ export const getCorrespondenceById = async (id) => {
       id: 6,
       name: 'Юлія Приходько',
       online: false,
-      avatar: '/src/assets/messages/julia-prihodko.jpg',
+      avatar: '/assets/messages/julia-prihodko.jpg',
       date: '19 лютого',
       messages: [
         {
@@ -124,7 +124,7 @@ export const getCorrespondenceById = async (id) => {
       id: 7,
       name: 'Людмила Ясько',
       online: false,
-      avatar: '/src/assets/messages/ludmila-yasko.jpg',
+      avatar: '/assets/messages/ludmila-yasko.jpg',
       date: '19 лютого',
       messages: [
         {
@@ -138,7 +138,7 @@ export const getCorrespondenceById = async (id) => {
       id: 8,
       name: 'Ірина Шелудько',
       online: false,
-      avatar: '/src/assets/messages/irina-sheludko.jpg',
+      avatar: '/assets/messages/irina-sheludko.jpg',
       date: '19 лютого',
       messages: [
         {

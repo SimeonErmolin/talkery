@@ -13,7 +13,7 @@ const AffiliatePage = () => {
         нашою платформою, та отримайте 10€ бонусів
       </p>
       <div className="link-section">
-        <img src="/src/assets/banners/voucher.png" alt="" className="gif" />
+        <img src="/assets/banners/voucher.png" alt="" className="gif" />
         <h3>
           Подаруй знижку 10€ <br /> та отримай 10€ на рахунок
         </h3>
@@ -23,7 +23,7 @@ const AffiliatePage = () => {
             copyToClipboard('https://talkery.io/ref/123456789');
           }}
         >
-          <img src="/src/assets/icons/share.svg" alt="" />
+          <img src="/assets/icons/share.svg" alt="" />
           Скопіювати промокод
         </button>
         <p className="not-allow">
@@ -33,12 +33,12 @@ const AffiliatePage = () => {
       </div>
       <div className="stats">
         <div className="stats__item">
-          <img src="/src/assets/icons/link.svg" alt="" />
+          <img src="/assets/icons/link.svg" alt="" />
           <span>Сесій заброньовано за вашим промо</span>
           <div className="value">0</div>
         </div>
         <div className="stats__item">
-          <img src="/src/assets/icons/user-profile/friend.svg" alt="" />
+          <img src="/assets/icons/user-profile/friend.svg" alt="" />
           <span>Нараховано бонусів</span>
           <div className="value">0 €</div>
         </div>

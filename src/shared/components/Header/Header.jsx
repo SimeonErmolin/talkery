@@ -50,15 +50,15 @@ const Header = () => {
       >
         <header className="header">
           <Link to="/" className="logo">
-            <img src="/src/assets/logo/talkery.png" alt="Logo" />
+            <img src="/assets/logo/talkery.png" alt="Logo" />
           </Link>
           <Link className="note" to="/note">
-            <img src="/src/assets/icons/note.svg" alt="Note" />
+            <img src="/assets/icons/note.svg" alt="Note" />
           </Link>
           <DesktopContent isLogged={true} />
           <Link className="user-wrapper" to="/user-profile">
             <img
-              src="/src/assets/icons/user-avatar.svg"
+              src="/assets/icons/user-avatar.svg"
               alt="User Avatar"
               className="avatar"
             />

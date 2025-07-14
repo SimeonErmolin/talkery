@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const GreetingTemplate = ({ userType }) => {
   return (
     <div className={'greeting'}>
-      <img src="/src/assets/logo/talkery.png" alt="" className={'logo'} />
+      <img src="/assets/logo/talkery.png" alt="" className={'logo'} />
       {userType === 'client' ? (
         <p className="description">
           Вітаємо вас на нашій платформі <br />
@@ -17,7 +17,7 @@ const GreetingTemplate = ({ userType }) => {
           лишився один крок до початку практики
         </p>
       )}
-      <img src="/src/assets/gif/hi.gif" alt="" className="gif" />
+      <img src="/assets/gif/hi.gif" alt="" className="gif" />
       <Link to={'/user-profile'} className={'button primary'}>
         {userType === 'client' ? 'Заповнити профіль' : 'Розпочати веріфікацію'}
       </Link>

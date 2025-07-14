@@ -6,7 +6,7 @@ const ProfilePage = () => {
   return (
     <UserProfile
       userType={'client'}
-      avatarUrl={'/src/assets/mockPhotos/Alex.png'}
+      avatarUrl={'/assets/mockPhotos/Alex.png'}
       userName={'Олександр Немцов'}
       userBalance={'5.00'}
     />

@@ -6,7 +6,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 1,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {
@@ -19,7 +19,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 2,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {
@@ -32,7 +32,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 3,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {
@@ -45,7 +45,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 4,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {
@@ -58,7 +58,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 5,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {
@@ -71,7 +71,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 6,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {
@@ -84,7 +84,7 @@ export const getWithdrawHistory = async () => {
           {
             id: 7,
             specialist: {
-              avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+              avatar: '/assets/mockPhotos/Katerina.jpeg',
               name: 'Юлія Приходько',
             },
             info: {

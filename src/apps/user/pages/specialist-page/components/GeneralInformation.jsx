@@ -6,7 +6,7 @@ const GeneralInformation = ({ language, therapy }) => {
       <h3 className="specialist-page__subtitle">Загальна інформація</h3>
       <div className="general-information__item">
         <img
-          src="/src/assets/icons/specialist-page/comment.png"
+          src="/assets/icons/specialist-page/comment.png"
           alt=""
           className="general-information__item--comment"
         />
@@ -19,7 +19,7 @@ const GeneralInformation = ({ language, therapy }) => {
       </div>
       <div className="general-information__item">
         <img
-          src="/src/assets/icons/specialist-page/flag.png"
+          src="/assets/icons/specialist-page/flag.png"
           alt=""
           className="general-information__item--flag"
         />

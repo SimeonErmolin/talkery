@@ -14,7 +14,7 @@ const Info = ({
         <h3>{name ?? '????'}</h3>
         {verified && (
           <img
-            src="/src/assets/icons/search/officialVerified.svg"
+            src="/assets/icons/search/officialVerified.svg"
             alt=""
             className="verified-icon"
           />
@@ -37,11 +37,11 @@ const Info = ({
 
       <div className="catalog-card__stats">
         <span className="catalog-card__stat">
-          <img src="/src/assets/icons/search/calendar.svg" alt="" />
+          <img src="/assets/icons/search/calendar.svg" alt="" />
           <p>{records ?? '0'} записів за 24 години</p>
         </span>
         <span className="catalog-card__stat">
-          <img src="/src/assets/icons/search/people.svg" alt="" />
+          <img src="/assets/icons/search/people.svg" alt="" />
           <p>{watching ?? '0'} переглядають зараз</p>
         </span>
       </div>

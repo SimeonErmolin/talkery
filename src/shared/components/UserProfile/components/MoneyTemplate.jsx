@@ -102,7 +102,7 @@ const MoneyTemplate = ({ userType, userBalance }) => {
         <div className="select-deposit-method">
           <div className="select-deposit-method__item">
             <div>
-              <img src="/src/assets/icons/user-profile/card.svg" alt="" />
+              <img src="/assets/icons/user-profile/card.svg" alt="" />
               <p>
                 {userType === 'client'
                   ? 'Банківська картка'
@@ -111,13 +111,13 @@ const MoneyTemplate = ({ userType, userBalance }) => {
             </div>
 
             <button>
-              <img src="/src/assets/icons/user-profile/arrow.svg" alt="" />
+              <img src="/assets/icons/user-profile/arrow.svg" alt="" />
             </button>
           </div>
 
           <div className="select-deposit-method__item">
             <div>
-              <img src="/src/assets/icons/user-profile/crypto.svg" alt="" />
+              <img src="/assets/icons/user-profile/crypto.svg" alt="" />
               <p>
                 {userType === 'client'
                   ? 'Криптовалюта'
@@ -126,25 +126,25 @@ const MoneyTemplate = ({ userType, userBalance }) => {
             </div>
 
             <button>
-              <img src="/src/assets/icons/user-profile/arrow.svg" alt="" />
+              <img src="/assets/icons/user-profile/arrow.svg" alt="" />
             </button>
           </div>
         </div>
 
         <div className="providers">
           <img
-            src="/src/assets/icons/user-profile/stripe.png"
+            src="/assets/icons/user-profile/stripe.png"
             alt=""
             className="stripe"
           />
           <div>
             <img
-              src="/src/assets/icons/user-profile/cryptomus-logo.svg"
+              src="/assets/icons/user-profile/cryptomus-logo.svg"
               alt=""
               className="cryptomus-logo"
             />
             <img
-              src="/src/assets/icons/user-profile/cryptomus.svg"
+              src="/assets/icons/user-profile/cryptomus.svg"
               alt=""
               className="cryptomus"
             />

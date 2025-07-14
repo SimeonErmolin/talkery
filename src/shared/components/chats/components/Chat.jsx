@@ -5,7 +5,7 @@ import { useGetCorrespondenceById } from '../../../hooks/useGetCorrespondenceByI
 import ModalLayout from '../../ModalLayout/ModalLayout.jsx';
 import RegistrationTransferModal from '../../RegistrationTransferModal/RegistrationTransferModal.jsx';
 
-const Chat = () => {
+const Chat = ({ userType }) => {
   const { id } = useParams();
 
   const { modalIsOpened, openModal, closeModal } = useModal();
@@ -61,7 +61,7 @@ const Chat = () => {
     <div className="chat">
       <div className="header">
         <button onClick={() => navigate(-1)} className="back-btn">
-          <img src="/src/assets/messages/arrow-left.svg" alt="" />
+          <img src="/assets/messages/arrow-left.svg" alt="" />
         </button>
 
         <div className="">
@@ -72,12 +72,14 @@ const Chat = () => {
         <img src={avatar} alt="" className="avatar" />
       </div>
 
-      <div className="book-session">
-        <p>Забронюйте сесію у фахівця</p>
-        <button className="button" onClick={openModal}>
-          Забронювати
-        </button>
-      </div>
+      {userType === 'client' && (
+        <div className="book-session">
+          <p>Забронюйте сесію у фахівця</p>
+          <button className="button" onClick={openModal}>
+            Забронювати
+          </button>
+        </div>
+      )}
 
       <div className="messages-window">
         <div className="date-wrapper">
@@ -116,7 +118,7 @@ const Chat = () => {
             window._fileInput && window._fileInput.click();
           }}
         >
-          <img src="/src/assets/messages/add-files-btn.svg" alt="" />
+          <img src="/assets/messages/add-files-btn.svg" alt="" />
         </button>
         <input
           type="text"
@@ -130,7 +132,7 @@ const Chat = () => {
         />
 
         <button className="send-btn">
-          <img src="/src/assets/messages/send-btn.svg" alt="" />
+          <img src="/assets/messages/send-btn.svg" alt="" />
         </button>
       </form>
 

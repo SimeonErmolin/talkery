@@ -35,7 +35,7 @@ const AppUser = () => {
         <Route path="chats" element={<ChatsPage userId="0" />} />
       </Route>
 
-      <Route path="chats/:id" element={<Chat />} />
+      <Route path="chats/:id" element={<Chat userType={'client'} />} />
 
       <Route path="search" element={<OnlyHeader />}>
         <Route path=":id" element={<SpecialistPage userType={'client'} />} />
@@ -50,7 +50,7 @@ const AppUser = () => {
         element={
           <EditProfileTemplate
             userType={'client'}
-            avatarUrl={'/src/assets/mockPhotos/Alex.png'}
+            avatarUrl={'/assets/mockPhotos/Alex.png'}
           />
         }
       />

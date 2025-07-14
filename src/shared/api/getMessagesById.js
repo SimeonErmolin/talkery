@@ -2,7 +2,7 @@ const listMessagesByUserId = {
   0: [
     {
       id: 1,
-      avatar: '/src/assets/messages/danilo.jpg',
+      avatar: '/assets/messages/danilo.jpg',
       name: 'Данило',
       message: 'Вітаю, чи можу я чимось допомогти?',
       date: '19.02',
@@ -11,7 +11,7 @@ const listMessagesByUserId = {
     },
     {
       id: 2,
-      avatar: '/src/assets/messages/ludmila.jpg',
+      avatar: '/assets/messages/ludmila.jpg',
       name: 'Людмила',
       message:
         'Вітаю. Дякую за увагу до мого профілю) Мене звати Людмила, спеціаліст до якого',
@@ -21,7 +21,7 @@ const listMessagesByUserId = {
     },
     {
       id: 3,
-      avatar: '/src/assets/messages/julia.jpg',
+      avatar: '/assets/messages/julia.jpg',
       name: 'Юлія',
       message:
         'Вітаю! Скажіть будь ласка, чи можу я допомогти вам знайти вільний час для',
@@ -31,7 +31,7 @@ const listMessagesByUserId = {
     },
     {
       id: 4,
-      avatar: '/src/assets/messages/irina.jpg',
+      avatar: '/assets/messages/irina.jpg',
       name: 'Ірина',
       message:
         'Добрий день! Дякую за увагу до мого профілю. Скажіть будь ласка, який у вас',
@@ -43,7 +43,7 @@ const listMessagesByUserId = {
   1: [
     {
       id: 5,
-      avatar: '/src/assets/messages/oleksandr.jpg',
+      avatar: '/assets/messages/oleksandr.jpg',
       name: 'Олександр Немцов',
       message: 'Чи можу я зараз потрапити на сеанс?',
       date: '19.02',
@@ -52,7 +52,7 @@ const listMessagesByUserId = {
     },
     {
       id: 6,
-      avatar: '/src/assets/messages/julia-prihodko.jpg',
+      avatar: '/assets/messages/julia-prihodko.jpg',
       name: 'Юлія Приходько',
       message:
         'Вітаю. Дуже подобається ваш профіль) Мене звати Юлія хочу пропрацювати',
@@ -62,7 +62,7 @@ const listMessagesByUserId = {
     },
     {
       id: 7,
-      avatar: '/src/assets/messages/ludmila-yasko.jpg',
+      avatar: '/assets/messages/ludmila-yasko.jpg',
       name: 'Людмила Ясько',
       message:
         'Скажіть будь ласка, чи можу я з вами вирішити всі свої сімейні проблеми?',
@@ -72,7 +72,7 @@ const listMessagesByUserId = {
     },
     {
       id: 8,
-      avatar: '/src/assets/messages/irina-sheludko.jpg',
+      avatar: '/assets/messages/irina-sheludko.jpg',
       name: 'Ірина Шелудько',
       message:
         'Вітаю! Я вже забронювала сеанс до вас на понеділок і дуже чекаю зустрічі',

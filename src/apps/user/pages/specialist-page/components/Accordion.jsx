@@ -25,16 +25,13 @@ const Accordion = ({ education, certificates, courses, other }) => {
             onClick={() => toggleItem('education')}
           >
             <div>
-              <img
-                src="/src/assets/icons/specialist-page/document.svg"
-                alt=""
-              />
+              <img src="/assets/icons/specialist-page/document.svg" alt="" />
               <p>Вища та професійна освіта</p>
             </div>
 
             <button>
               <img
-                src={`/src/assets/icons/search/modal/${openItems.education ? 'minus' : 'plus'}.svg`}
+                src={`/assets/icons/search/modal/${openItems.education ? 'minus' : 'plus'}.svg`}
                 alt=""
               />
             </button>
@@ -61,13 +58,13 @@ const Accordion = ({ education, certificates, courses, other }) => {
             onClick={() => toggleItem('courses')}
           >
             <div>
-              <img src="/src/assets/icons/specialist-page/medal.svg" alt="" />
+              <img src="/assets/icons/specialist-page/medal.svg" alt="" />
               <p>Професійні курси</p>
             </div>
 
             <button>
               <img
-                src={`/src/assets/icons/search/modal/${openItems.courses ? 'minus' : 'plus'}.svg`}
+                src={`/assets/icons/search/modal/${openItems.courses ? 'minus' : 'plus'}.svg`}
                 alt=""
               />
             </button>
@@ -86,13 +83,13 @@ const Accordion = ({ education, certificates, courses, other }) => {
             onClick={() => toggleItem('other')}
           >
             <div>
-              <img src="/src/assets/icons/specialist-page/glasses.svg" alt="" />
+              <img src="/assets/icons/specialist-page/glasses.svg" alt="" />
               <p>Інший досвід</p>
             </div>
 
             <button>
               <img
-                src={`/src/assets/icons/search/modal/${openItems.other ? 'minus' : 'plus'}.svg`}
+                src={`/assets/icons/search/modal/${openItems.other ? 'minus' : 'plus'}.svg`}
                 alt=""
               />
             </button>

@@ -25,7 +25,7 @@ const SearchControls = ({ activeTab }) => {
             placeholder="Пошук по імені"
           />
           <button className="search-button">
-            <img src="/src/assets/icons/search/search.png" alt="search" />
+            <img src="/assets/icons/search/search.png" alt="search" />
           </button>
         </div>
         <hr />

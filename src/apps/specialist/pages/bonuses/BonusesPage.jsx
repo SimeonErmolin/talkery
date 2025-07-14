@@ -18,7 +18,7 @@ const BonusesPage = () => {
             </div>
 
             <div className="specialist-bonuses__item--recommended">
-              <img src="/src/assets/icons/search/star.svg" alt="" />
+              <img src="/assets/icons/search/star.svg" alt="" />
               <p>Рекомендуємо</p>
             </div>
           </div>

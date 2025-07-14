@@ -46,7 +46,7 @@ const RegistrationTransferModal = ({ registration, settings, userType }) => {
             {settings || userType === 'specialist' ? (
               <div className="seance-info__btn-date">
                 <p>Березень 2025</p>
-                <img src="/src/assets/icons/arrow-down.svg" alt="" />
+                <img src="/assets/icons/arrow-down.svg" alt="" />
               </div>
             ) : (
               <p className="seance-info__title">Сеанс 60 хвилин</p>
@@ -66,7 +66,7 @@ const RegistrationTransferModal = ({ registration, settings, userType }) => {
             </pre>
           </div>
           <img
-            src="/src/assets/mockPhotos/Katerina.jpeg"
+            src="/assets/mockPhotos/Katerina.jpeg"
             alt=""
             className="avatar"
           />

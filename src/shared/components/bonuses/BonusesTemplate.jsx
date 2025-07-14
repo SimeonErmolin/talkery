@@ -8,7 +8,7 @@ const BonusesTemplate = ({ userType, children }) => {
       <div className="bonuses-page__affiliate">
         {userType === 'client' ? (
           <Link to={'/affiliate'}>
-            <img src="/src/assets/icons/bonuses/ticket.svg" alt="" />
+            <img src="/assets/icons/bonuses/ticket.svg" alt="" />
             <div>
               <h4>Запросіть друзів до Talkery</h4>
               <pre>
@@ -22,7 +22,7 @@ const BonusesTemplate = ({ userType, children }) => {
         ) : (
           <a>
             <img
-              src="/src/assets/icons/bonuses/gift.svg"
+              src="/assets/icons/bonuses/gift.svg"
               className="specialist-gift-img"
               alt=""
             />

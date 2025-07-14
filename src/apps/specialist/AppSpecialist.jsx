@@ -33,7 +33,7 @@ const AppSpecialist = () => {
         <Route path="clients" element={<ClientsPage userId="1" />} />
       </Route>
 
-      <Route path="chats/:id" element={<Chat />} />
+      <Route path="chats/:id" element={<Chat userType="specialist" />} />
 
       <Route path="/" element={<OnlyNavigation isSpecialist={true} />}>
         <Route path="user-profile" element={<ProfilePage />} />
@@ -44,7 +44,7 @@ const AppSpecialist = () => {
         element={
           <EditProfileTemplate
             userType="specialist"
-            avatarUrl="/src/assets/mockPhotos/Katerina.jpeg"
+            avatarUrl="/assets/mockPhotos/Katerina.jpeg"
           />
         }
       />

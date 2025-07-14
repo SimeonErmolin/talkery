@@ -16,7 +16,7 @@ const EditProfileTemplate = ({ userType, avatarUrl }) => {
             <h2 className="label">Номер телефону</h2>
             <div className="input-wrapper">
               <div className="flag">
-                <img src="/src/assets/language/ua-flag.png" alt="" />
+                <img src="/assets/language/ua-flag.png" alt="" />
               </div>
               <input type="text" placeholder="+380" />
             </div>

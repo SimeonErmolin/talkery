@@ -6,7 +6,7 @@ export const getSpecialists = async () => {
           {
             id: 1,
             selection: 'best-match',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '1',
@@ -20,7 +20,7 @@ export const getSpecialists = async () => {
           {
             id: 2,
             selection: 'recommended',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '1',
@@ -34,7 +34,7 @@ export const getSpecialists = async () => {
           {
             id: 3,
             selection: '',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '1',
@@ -48,7 +48,7 @@ export const getSpecialists = async () => {
           {
             id: 4,
             selection: '',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '1',
@@ -64,7 +64,7 @@ export const getSpecialists = async () => {
           {
             id: 5,
             selection: 'recommended',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '3',
@@ -78,7 +78,7 @@ export const getSpecialists = async () => {
           {
             id: 6,
             selection: '',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '1',
@@ -92,7 +92,7 @@ export const getSpecialists = async () => {
           {
             id: 7,
             selection: '',
-            avatar: '/src/assets/mockPhotos/Tetiana.jpg',
+            avatar: '/assets/mockPhotos/Tetiana.jpg',
             name: 'Тетяна Дума',
             verified: true,
             experience: '1',

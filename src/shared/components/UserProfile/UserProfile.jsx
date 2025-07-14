@@ -37,7 +37,7 @@ const UserProfile = ({ userType, avatarUrl, userName, userBalance }) => {
 
         <div className="balance-wrapper">
           <button className="history" onClick={openHistoryModal}>
-            <img src="/src/assets/icons/history.svg" alt="" />
+            <img src="/assets/icons/history.svg" alt="" />
           </button>
 
           <h2 className="balance-wrapper__title">Загальний баланс</h2>
@@ -50,7 +50,7 @@ const UserProfile = ({ userType, avatarUrl, userName, userBalance }) => {
               </>
             ) : (
               <>
-                <img src="/src/assets/icons/user-profile/deposit.svg" alt="" />
+                <img src="/assets/icons/user-profile/deposit.svg" alt="" />
                 Вивести
               </>
             )}
@@ -59,22 +59,22 @@ const UserProfile = ({ userType, avatarUrl, userName, userBalance }) => {
 
         <ul className="user-links">
           <Link to={'/edit-profile'} className="user-links__item">
-            <img src="/src/assets/icons/user-profile/user.svg" alt="" />
+            <img src="/assets/icons/user-profile/user.svg" alt="" />
             Мої дані
           </Link>
 
           {userType === 'client' && (
             <>
               <Link to={'/quiz'} className="user-links__item">
-                <img src="/src/assets/icons/user-profile/search.svg" alt="" />
+                <img src="/assets/icons/user-profile/search.svg" alt="" />
                 Підбір психолога
               </Link>
               <Link to={'/affiliate'} className="user-links__item">
-                <img src="/src/assets/icons/user-profile/friend.svg" alt="" />
+                <img src="/assets/icons/user-profile/friend.svg" alt="" />
                 Запросити друга
               </Link>
               <Link to={'/gift-card'} className="user-links__item">
-                <img src="/src/assets/icons/user-profile/gift.svg" alt="" />
+                <img src="/assets/icons/user-profile/gift.svg" alt="" />
                 Подарунковий сертифікат
               </Link>
             </>
@@ -83,14 +83,14 @@ const UserProfile = ({ userType, avatarUrl, userName, userBalance }) => {
           {userType === 'specialist' && (
             <>
               <Link to={'/my-profile/5'} className="user-links__item">
-                <img src="/src/assets/icons/user-profile/search.svg" alt="" />
+                <img src="/assets/icons/user-profile/search.svg" alt="" />
                 Мій профіль
               </Link>
               <li
                 className="user-links__item"
                 onClick={() => setIsReviewsModalOpen(true)}
               >
-                <img src="/src/assets/icons/user-profile/feedback.svg" alt="" />
+                <img src="/assets/icons/user-profile/feedback.svg" alt="" />
                 Мої відгуки
               </li>
             </>
@@ -100,13 +100,13 @@ const UserProfile = ({ userType, avatarUrl, userName, userBalance }) => {
             className="user-links__item"
             onClick={() => setIsLanguageMenuOpen(true)}
           >
-            <img src="/src/assets/icons/user-profile/language.svg" alt="" />
+            <img src="/assets/icons/user-profile/language.svg" alt="" />
             Мова
           </li>
 
           {userType === 'specialist' && (
             <li className="user-links__item">
-              <img src="/src/assets/icons/user-profile/delete.svg" alt="" />
+              <img src="/assets/icons/user-profile/delete.svg" alt="" />
               Видалити профіль
             </li>
           )}

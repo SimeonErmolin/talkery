@@ -25,7 +25,7 @@ const ModalLayout = ({ isOpen, onClose, contentClassName = '', children }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <button className="modal-content__close" onClick={onClose}>
-          <img src="/src/assets/icons/close.svg" alt="close" />
+          <img src="/assets/icons/close.svg" alt="close" />
         </button>
         <div className={`modal-content__inner ${contentClassName}`}>
           {children}

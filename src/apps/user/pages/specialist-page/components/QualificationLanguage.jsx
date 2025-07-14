@@ -17,7 +17,7 @@ const QualificationLanguage = ({ qualifications, language }) => {
 
         <div className="general-information__item">
           <img
-            src="/src/assets/icons/specialist-page/comment.png"
+            src="/assets/icons/specialist-page/comment.png"
             alt=""
             className="general-information__item--comment"
           />

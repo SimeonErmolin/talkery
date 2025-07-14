@@ -11,7 +11,7 @@ const HeaderGoToBack = () => {
   return (
     <div className={'header-go-to-back'}>
       <button onClick={handleGoBack}>
-        <img src="/src/assets/icons/arrow-back.svg" alt="" />
+        <img src="/assets/icons/arrow-back.svg" alt="" />
       </button>
     </div>
   );

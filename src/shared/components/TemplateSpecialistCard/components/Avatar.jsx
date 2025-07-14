@@ -4,11 +4,7 @@ const Avatar = ({ avatar }) => {
   return (
     <div className="catalog-card__image">
       <img src={avatar} alt="" className="image-avatar" />
-      <img
-        src="/src/assets/icons/search/play.svg"
-        alt=""
-        className="image-play"
-      />
+      <img src="/assets/icons/search/play.svg" alt="" className="image-play" />
     </div>
   );
 };

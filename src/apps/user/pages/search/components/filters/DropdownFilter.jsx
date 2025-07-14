@@ -19,7 +19,7 @@ const DropdownFilter = ({
             <p>{topic.category}</p>
             <button>
               <img
-                src={`/src/assets/icons/search/modal/${expanded[topic.category] ? 'minus' : 'plus'}.svg`}
+                src={`/assets/icons/search/modal/${expanded[topic.category] ? 'minus' : 'plus'}.svg`}
                 alt=""
               />
             </button>

@@ -19,7 +19,7 @@ const notFoundMessage = {
 const NoDataMessage = ({ place, margin }) => {
   return (
     <div className={`no-data ${margin && 'no-data__chat'}`}>
-      <img src="/src/assets/icons/no-data-find/clock.svg" alt="" />
+      <img src="/assets/icons/no-data-find/clock.svg" alt="" />
       <p>{notFoundMessage[place]}</p>
     </div>
   );

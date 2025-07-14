@@ -191,7 +191,7 @@
 
   &.for-you-container {
     height: 241px;
-    background-image: url('../../../../assets/icons/specialist-page/green-shield.svg');
+    background-image: url('/public/assets/icons/specialist-page/green-shield.svg');
     background-repeat: no-repeat;
     background-size: 255px 210px;
     background-position: 130px 31px;
@@ -272,7 +272,7 @@
     &__stars {
       width: 80px;
       height: 16px;
-      background-image: url('../../../../assets/icons/specialist-page/5stars.png');
+      background-image: url('/public/assets/icons/specialist-page/5stars.png');
     }
   }
 
@@ -310,13 +310,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  background-image: url('../../../../assets/icons/specialist-page/placeholder-video.jpg');
+  background-image: url('/public/assets/icons/specialist-page/placeholder-video.jpg');
 
   &__play-btn {
     position: relative;
     width: 55px;
     height: 55px;
-    background-image: url('../../../../assets/icons/specialist-page/circle.png');
+    background-image: url('/public/assets/icons/specialist-page/circle.png');
 
     &:hover {
       opacity: 0.9;
@@ -330,7 +330,7 @@
       width: 27px;
       height: 27px;
 
-      background-image: url('../../../../assets/icons/specialist-page/triangle.png');
+      background-image: url('/public/assets/icons/specialist-page/triangle.png');
     }
   }
 }

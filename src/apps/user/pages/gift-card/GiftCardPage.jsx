@@ -63,11 +63,7 @@ const GiftCardPage = () => {
           Даруйте близьким грошові сертифікати <br /> на оплату сесій з
           психотерапевтом
         </p>
-        <img
-          src="/src/assets/banners/gift-card-ua.png"
-          alt=""
-          className="banner"
-        />
+        <img src="/assets/banners/gift-card-ua.png" alt="" className="banner" />
         <button onClick={scrollToCardSection} className="button primary">
           Обрати сертифікат
         </button>
@@ -89,7 +85,7 @@ const GiftCardPage = () => {
                 </button>
                 <img
                   className="gift-banner"
-                  src="/src/assets/banners/gift-item.svg"
+                  src="/assets/banners/gift-item.svg"
                   alt=""
                 />
               </li>

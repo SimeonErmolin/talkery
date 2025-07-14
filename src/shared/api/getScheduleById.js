@@ -3,7 +3,7 @@ const listSchedulesById = {
     sessions: [
       {
         date: '3 березня, Ср',
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         time: '11:00 - 12:00',
@@ -12,7 +12,7 @@ const listSchedulesById = {
       },
       {
         date: '5 березня, Пт',
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         time: '11:00 - 12:00',
@@ -22,7 +22,7 @@ const listSchedulesById = {
     ],
     specialists: [
       {
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         cost: '20€',
@@ -31,7 +31,7 @@ const listSchedulesById = {
         status: 'reserve',
       },
       {
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         cost: '20€',
@@ -40,7 +40,7 @@ const listSchedulesById = {
         status: 'reserve',
       },
       {
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         cost: '20€',
@@ -52,7 +52,7 @@ const listSchedulesById = {
     passed: [
       {
         date: '13 лютого, Чт',
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         time: '11:00 - 12:00',
@@ -61,7 +61,7 @@ const listSchedulesById = {
       },
       {
         date: '28 січня, Вт',
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         time: '11:00 - 12:00',
@@ -72,7 +72,7 @@ const listSchedulesById = {
     canceled: [
       {
         date: '15 лютого, Пт',
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         time: '11:00 - 12:00',
@@ -81,7 +81,7 @@ const listSchedulesById = {
       },
       {
         date: '24 січня, Ср',
-        avatar: '/src/assets/mockPhotos/Katerina.jpeg',
+        avatar: '/assets/mockPhotos/Katerina.jpeg',
         name: 'Катерина Іваненко',
         role: 'Психолог, Психотерапевт',
         time: '11:00 - 12:00',
@@ -94,14 +94,14 @@ const listSchedulesById = {
     sessions: [
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         status: 'available',
       },
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         status: 'notAvailable',
@@ -110,7 +110,7 @@ const listSchedulesById = {
     passed: [
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         result: 'Успішно',
@@ -118,7 +118,7 @@ const listSchedulesById = {
       },
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         result: 'Успішно',
@@ -126,7 +126,7 @@ const listSchedulesById = {
       },
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         result: 'Успішно',
@@ -136,7 +136,7 @@ const listSchedulesById = {
     canceled: [
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         result: 'Скасовано',
@@ -144,7 +144,7 @@ const listSchedulesById = {
       },
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         result: 'Скасовано',
@@ -152,7 +152,7 @@ const listSchedulesById = {
       },
       {
         date: '1 березня, Сб',
-        avatar: '/src/assets/messages/julia-prihodko.jpg',
+        avatar: '/assets/messages/julia-prihodko.jpg',
         name: 'Юлія Приходько',
         time: '14:00 - 15:00',
         result: 'Скасовано',

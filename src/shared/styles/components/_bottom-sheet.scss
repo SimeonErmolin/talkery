@@ -54,7 +54,7 @@
 
       &.checked::after {
         content: '';
-        background: url('/src/assets/icons/user-profile/checked.svg')
+        background: url('/public/assets/icons/user-profile/checked.svg')
           no-repeat center center;
         width: 24px;
         height: 24px;
@@ -62,7 +62,7 @@
 
       &::after {
         content: '';
-        background: url('/src/assets/icons/user-profile/non-checked.svg')
+        background: url('/public/assets/icons/user-profile/non-checked.svg')
           no-repeat center center;
         width: 24px;
         height: 24px;

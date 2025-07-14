@@ -6,13 +6,13 @@ const MobileMenu = ({ menuIsActive, closeMenu }) => {
     <div className={`mobile-menu ${menuIsActive ? 'active' : ''}`}>
       <ul className="mobile-menu__header">
         <li className="mobile-menu__header__item">
-          <img src="/src/assets/language/ua.png" alt="" className={'flag'} />
+          <img src="/assets/language/ua.png" alt="" className={'flag'} />
           UA
         </li>
         <li className="mobile-menu__header__item online ">Онлайн підтримка</li>
         <li className="mobile-menu__header__item">FAQ</li>
         <button className={'close'} onClick={closeMenu}>
-          <img src="/src/assets/icons/close.svg" alt="" />
+          <img src="/assets/icons/close.svg" alt="" />
         </button>
       </ul>
       <div className="mobile-menu__content">

@@ -56,7 +56,7 @@ const ScheduleTemplate = ({ userType, userId }) => {
       >
         {userType === 'specialist' && (
           <button className="setting-schedule" onClick={openModal}>
-            <img src="/src/assets/icons/schedule/setting.svg" alt="" />
+            <img src="/assets/icons/schedule/setting.svg" alt="" />
             <p>налаштувати розклад</p>
           </button>
         )}

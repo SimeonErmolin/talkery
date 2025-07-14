@@ -23,7 +23,7 @@ const BonusesPage = () => {
         >
           <input type="text" placeholder="XXXXXXX" />
           <button>
-            <img src="/src/assets/icons/bonuses/arrow.svg" alt="" />
+            <img src="/assets/icons/bonuses/arrow.svg" alt="" />
           </button>
         </form>
       </div>

@@ -90,8 +90,8 @@ const MoneyHistoryTemplate = ({ userType }) => {
                   <img
                     src={
                       item.method === 'crypto'
-                        ? '/src/assets/icons/user-profile/crypto.svg'
-                        : '/src/assets/icons/user-profile/card.svg'
+                        ? '/assets/icons/user-profile/crypto.svg'
+                        : '/assets/icons/user-profile/card.svg'
                     }
                     alt=""
                     className={item.method}
@@ -155,8 +155,8 @@ const MoneyHistoryTemplate = ({ userType }) => {
                   <img
                     src={
                       item.method === 'crypto'
-                        ? '/src/assets/icons/user-profile/crypto.svg'
-                        : '/src/assets/icons/user-profile/card.svg'
+                        ? '/assets/icons/user-profile/crypto.svg'
+                        : '/assets/icons/user-profile/card.svg'
                     }
                     alt=""
                     className={item.method}

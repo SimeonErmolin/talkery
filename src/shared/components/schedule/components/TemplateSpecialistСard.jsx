@@ -114,18 +114,15 @@ const TemplateSpecialistCard = ({
           {status === 'reserve' ? (
             <section className="specialist-info">
               <div className="specialist-info__item">
-                <img
-                  src="/src/assets/icons/specialist-card/wallet.svg"
-                  alt=""
-                />
+                <img src="/assets/icons/specialist-card/wallet.svg" alt="" />
                 <p>{cost}</p>
               </div>
               <div className="specialist-info__item">
-                <img src="/src/assets/icons/specialist-card/video.svg" alt="" />
+                <img src="/assets/icons/specialist-card/video.svg" alt="" />
                 <p>{experience}</p>
               </div>
               <div className="specialist-info__item">
-                <img src="/src/assets/icons/specialist-card/like.svg" alt="" />
+                <img src="/assets/icons/specialist-card/like.svg" alt="" />
                 <p>{likes} відгуків</p>
               </div>
             </section>

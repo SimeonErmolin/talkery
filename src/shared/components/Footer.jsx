@@ -4,24 +4,24 @@ import { Link } from 'react-router';
 const Footer = () => {
   return (
     <footer className={'footer'}>
-      <img src="/src/assets/logo/talkery.png" alt="" className={'logo'} />
+      <img src="/assets/logo/talkery.png" alt="" className={'logo'} />
       <p>perfect mental health</p>
       <div className="partners">
-        <img src="/src/assets/logo/angelone.svg" alt="" />
-        <img src="/src/assets/logo/GDPR.svg" alt="" />
+        <img src="/assets/logo/angelone.svg" alt="" />
+        <img src="/assets/logo/GDPR.svg" alt="" />
       </div>
       <div className="payments">
         <div className="payments__item">
-          <img src="/src/assets/logo/visa.svg" alt="" />
+          <img src="/assets/logo/visa.svg" alt="" />
         </div>
         <div className="payments__item">
-          <img src="/src/assets/logo/apple-pay.svg" alt="" />
+          <img src="/assets/logo/apple-pay.svg" alt="" />
         </div>
         <div className="payments__item">
-          <img src="/src/assets/logo/google-pay.svg" alt="" />
+          <img src="/assets/logo/google-pay.svg" alt="" />
         </div>
         <div className="payments__item">
-          <img src="/src/assets/logo/mastercard.svg" alt="" />
+          <img src="/assets/logo/mastercard.svg" alt="" />
         </div>
       </div>
       <div className="legal">

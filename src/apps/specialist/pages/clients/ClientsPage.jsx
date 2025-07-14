@@ -16,7 +16,7 @@ const ClientsPage = ({ userId }) => {
         <p className="ClientsPage__header--title">Мої клієнти</p>
 
         <div className="ClientsPage__header--total-clients">
-          <img src="/src/assets/icons/clients.svg" alt="" />
+          <img src="/assets/icons/clients.svg" alt="" />
           <p className="count">{clientsData.totalClients || '0'}</p>
           <p className="desc">
             всього <br />
@@ -41,7 +41,7 @@ const ClientsPage = ({ userId }) => {
 
                 <div className="client-item__payment-info">
                   <img
-                    src="/src/assets/icons/specialist-card/wallet.svg"
+                    src="/assets/icons/specialist-card/wallet.svg"
                     alt=""
                     className="client-item__payment-info--wallet"
                   />
@@ -49,7 +49,7 @@ const ClientsPage = ({ userId }) => {
                     {client.cost}
                   </p>
                   <img
-                    src="/src/assets/icons/new-chat.svg"
+                    src="/assets/icons/new-chat.svg"
                     alt=""
                     className="client-item__payment-info--chat"
                   />

@@ -16,7 +16,7 @@ export const getReviews = async () => {
         },
         {
           id: 2,
-          avatar: '/src/assets/icons/specialist-page/Sergei.jpg',
+          avatar: '/assets/icons/specialist-page/Sergei.jpg',
           name: 'Сергій',
           date: '3 місяці тому',
           stars: '5',
