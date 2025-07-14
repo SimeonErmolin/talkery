@@ -28,6 +28,19 @@
       justify-content: space-between;
       align-items: center;
 
+      &__btn-date {
+        cursor: pointer;
+        width: fit-content;
+        display: flex;
+        gap: 10px;
+        padding: 10px 16px;
+        border-radius: 11px;
+        background: #F7F8F6;
+        color: #474747;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
       &__title {
         color: #262626;
         font-size: 18px;
@@ -46,53 +59,6 @@
         width: 62px;
         height: 62px;
         border-radius: 50%;
-      }
-    }
-
-    .carousel {
-      display: flex;
-      border-top: 1px solid #eee;
-
-      overflow: hidden;
-      overflow-x: auto;
-      cursor: grab;
-      user-select: none;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      &__item {
-        padding: 20px 20px;
-        display: flex;
-        gap: 3px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid #eee;
-
-        &--active {
-          border-bottom: 2px solid #262626;
-
-          .carousel__item--day-week {
-            color: #262626;
-          }
-          .carousel__item--date {
-            color: #262626;
-          }
-        }
-
-        &--day-week {
-          color: #a3a3a3;
-          font-size: 16px;
-          font-weight: 600;
-        }
-        &--date {
-          color: #909090;
-          font-size: 11px;
-          font-weight: 500;
-        }
       }
     }
 

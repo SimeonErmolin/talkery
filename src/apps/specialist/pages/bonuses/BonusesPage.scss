@@ -1,0 +1,66 @@
+.specialist-bonuses {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 13px;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+
+    &--header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .bonuses-title {
+        color: #262626;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .bonuses-description {
+        color: #474747;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
+    &--recommended {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: #F7F7F7;
+      padding: 10px;
+
+      p {
+        color: #2196F3;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    &--cost {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .bonuses-cost-desc {
+        color: #474747;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .bonuses-cost {
+        color: #474747;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}

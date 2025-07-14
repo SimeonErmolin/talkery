@@ -1,147 +1,91 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './RegistrationTransferModal.scss';
+import DateCarousel from '../DateCarousel/DateCarousel.jsx';
 
-const RegistrationTransferModal = ({ registration }) => {
-  const [activeTime, setActiveTime] = useState('12:00 - 13:00');
-  const [activeDay, setActiveDay] = useState('1');
+const timeSlots = [
+  '8:00 - 9:00',
+  '10:00 - 11:00',
+  '12:00 - 13:00',
+  '14:00 - 15:00',
+  '16:00 - 17:00',
+  '18:00 - 19:00',
+  '20:00 - 21:00',
+  '21:00 - 22:00',
+];
 
-  const carouselRef = useRef(null);
+const RegistrationTransferModal = ({ registration, settings, userType }) => {
+  const [activeTime, setActiveTime] = useState(['12:00 - 13:00']);
 
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    const handleMouseDown = (e) => {
-      isDown = true;
-      carousel.classList.add('active');
-      startX = e.pageX - carousel.offsetLeft;
-      scrollLeft = carousel.scrollLeft;
-    };
-
-    const handleMouseLeave = () => {
-      isDown = false;
-      carousel.classList.remove('active');
-    };
-
-    const handleMouseUp = () => {
-      isDown = false;
-      carousel.classList.remove('active');
-    };
-
-    const handleMouseMove = (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 1.5; // Скорость прокрутки
-      carousel.scrollLeft = scrollLeft - walk;
-    };
-
-    carousel.addEventListener('mousedown', handleMouseDown);
-    carousel.addEventListener('mouseleave', handleMouseLeave);
-    carousel.addEventListener('mouseup', handleMouseUp);
-    carousel.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      carousel.removeEventListener('mousedown', handleMouseDown);
-      carousel.removeEventListener('mouseleave', handleMouseLeave);
-      carousel.removeEventListener('mouseup', handleMouseUp);
-      carousel.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  const handleTimeClick = (time) => {
+    if (settings) {
+      if (activeTime.includes(time)) {
+        setActiveTime(activeTime.filter((t) => t !== time));
+      } else {
+        setActiveTime([...activeTime, time]);
+      }
+    } else {
+      setActiveTime([time]);
+    }
+  };
 
   return (
     <div className="registration-transfer">
       <div className="header">
-        <h3>Виберіть час</h3>
+        <h3>
+          {settings
+            ? 'Налаштування розкладу'
+            : userType === 'specialist'
+              ? 'Перенесення сеансу'
+              : 'Виберіть час'}
+        </h3>
       </div>
 
       <div className="registration-transfer__content">
         <div className="seance-info">
           <div>
-            <p className="seance-info__title">Сеанс 60 хвилин</p>
+            {settings || userType === 'specialist' ? (
+              <div className="seance-info__btn-date">
+                <p>Березень 2025</p>
+                <img src="/src/assets/icons/arrow-down.svg" alt="" />
+              </div>
+            ) : (
+              <p className="seance-info__title">Сеанс 60 хвилин</p>
+            )}
+
             <pre>
               <p className="seance-info__desc">
-                {'Виберіть день та час, на який\n' +
-                  'ви хочете забронювати сеанс'}
+                {settings
+                  ? 'Виберіть дні та години в які клієнти\n' +
+                    'зможуть забронювати сеанс до вас:'
+                  : userType === 'specialist'
+                    ? 'Виберіть день та час на які ви\n' +
+                      'бажаєте перенести сеанс з клієнтом:'
+                    : 'Виберіть день та час, на який\n' +
+                      'ви хочете забронювати сеанс'}
               </p>
             </pre>
           </div>
           <img
-            src="/src/assets/mockPhotos/avatar.jpg"
+            src="/src/assets/mockPhotos/Katerina.jpeg"
             alt=""
             className="avatar"
           />
         </div>
 
-        <div className="carousel" ref={carouselRef}>
-          <button
-            className={`carousel__item ${activeDay === '1' ? 'carousel__item--active' : ''}`}
-            onClick={() => setActiveDay('1')}
-          >
-            <p className="carousel__item--day-week">Субота</p>
-            <p className="carousel__item--date">1 березня</p>
-          </button>
-
-          <button
-            className={`carousel__item ${activeDay === '2' ? 'carousel__item--active' : ''}`}
-            onClick={() => setActiveDay('2')}
-          >
-            <p className="carousel__item--day-week">Неділя</p>
-            <p className="carousel__item--date">2 березня</p>
-          </button>
-
-          <button
-            className={`carousel__item ${activeDay === '3' ? 'carousel__item--active' : ''}`}
-            onClick={() => setActiveDay('3')}
-          >
-            <p className="carousel__item--day-week">Понеділок</p>
-            <p className="carousel__item--date">3 березня</p>
-          </button>
-
-          <button
-            className={`carousel__item ${activeDay === '4' ? 'carousel__item--active' : ''}`}
-            onClick={() => setActiveDay('4')}
-          >
-            <p className="carousel__item--day-week">Вівторок</p>
-            <p className="carousel__item--date">4 березня</p>
-          </button>
-        </div>
+        <DateCarousel />
 
         <p className="time-title">за вашим місцевим часом</p>
 
         <div className="time-buttons">
-          <button
-            className={`time-buttons__item ${activeTime === '10:00 - 11:00' ? 'time-buttons__item--active' : ''}`}
-            onClick={() => setActiveTime('10:00 - 11:00')}
-          >
-            10:00 - 11:00
-          </button>
-          <button
-            className={`time-buttons__item ${activeTime === '12:00 - 13:00' ? 'time-buttons__item--active' : ''}`}
-            onClick={() => setActiveTime('12:00 - 13:00')}
-          >
-            12:00 - 13:00
-          </button>
-          <button
-            className={`time-buttons__item ${activeTime === '16:00 - 17:00' ? 'time-buttons__item--active' : ''}`}
-            onClick={() => setActiveTime('16:00 - 17:00')}
-          >
-            16:00 - 17:00
-          </button>
-          <button
-            className={`time-buttons__item ${activeTime === '18:00 - 19:00' ? 'time-buttons__item--active' : ''}`}
-            onClick={() => setActiveTime('18:00 - 19:00')}
-          >
-            18:00 - 19:00
-          </button>
-          <button
-            className={`time-buttons__item ${activeTime === '20:00 - 21:00' ? 'time-buttons__item--active' : ''}`}
-            onClick={() => setActiveTime('20:00 - 21:00')}
-          >
-            20:00 - 21:00
-          </button>
+          {timeSlots.map((slot) => (
+            <button
+              key={slot}
+              className={`time-buttons__item ${activeTime.includes(slot) ? 'time-buttons__item--active' : ''}`}
+              onClick={() => handleTimeClick(slot)}
+            >
+              {slot}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -150,6 +94,8 @@ const RegistrationTransferModal = ({ registration }) => {
           <button className="button primary solid">
             Записатися та оплатити
           </button>
+        ) : settings ? (
+          <button className="button primary solid">Зберегти графік</button>
         ) : (
           <button className="button primary solid">Перенести сеанс</button>
         )}

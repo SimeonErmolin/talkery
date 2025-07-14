@@ -7,7 +7,7 @@ import Avatar from './components/Avatar.jsx';
 import Overview from './components/Overview.jsx';
 import Info from './components/Info.jsx';
 
-const TemplateCatalogCard = ({ id, place }) => {
+const TemplateCatalogCard = ({ id, place, userType }) => {
   const { specialist, isLoading } = useSpecialistById(id);
 
   if (isLoading || !specialist)
@@ -48,11 +48,13 @@ const TemplateCatalogCard = ({ id, place }) => {
 
       <Overview cost={cost} sessions={sessions} likes={likes} />
 
-      <Link to={place === 'catalog' ? `/search/${id}` : `/chats`}>
-        <button className="button primary catalog-card__button">
-          {place === 'catalog' ? 'Подивитись профіль' : 'Написати фахівцю'}
-        </button>
-      </Link>
+      {userType === 'client' && (
+        <Link to={place === 'catalog' ? `/search/${id}` : `/chats`}>
+          <button className="button primary catalog-card__button">
+            {place === 'catalog' ? 'Подивитись профіль' : 'Написати фахівцю'}
+          </button>
+        </Link>
+      )}
     </article>
   );
 };

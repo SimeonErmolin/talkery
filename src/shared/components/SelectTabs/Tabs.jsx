@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tabs.scss';
 
-const Tabs = ({ tabs, activeTab, setActiveTab, second }) => {
+const Tabs = ({ tabs, activeTab, setActiveTab, second, children }) => {
   return (
     <div className={`tabs ${second ? 'second' : ''}`}>
       {tabs.map(({ key, label, isNew }) => (
@@ -13,6 +13,7 @@ const Tabs = ({ tabs, activeTab, setActiveTab, second }) => {
           {label} {isNew && <span className="new">новинка</span>}
         </button>
       ))}
+      {children}
     </div>
   );
 };

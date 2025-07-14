@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import { getCorrespondenceById } from '../api/getCorrespondenceById';
 
@@ -12,42 +12,38 @@ export const useGetCorrespondenceById = (id) => {
     enabled: !!id,
   });
 
-  if (isLoading) {
-    return {
-      loadingElement: <p>Загрузка...</p>,
-    };
-  }
+  const memoizedData = useMemo(() => {
+    if (!data) return null;
 
-  if (error || !data) {
+    const {
+      name = '',
+      online = false,
+      avatar = '',
+      date = '',
+      messages = [],
+    } = data;
+
     return {
-      loadingElement: (
+      name,
+      online,
+      avatar,
+      date,
+      messages,
+    };
+  }, [data]);
+
+  return {
+    loadingElement: isLoading ? <p>Загрузка...</p> : null,
+    errorElement:
+      error || !data ? (
         <div>
           <h1>ERROR</h1>
           <button className="button solid" onClick={() => navigate(-1)}>
             ВЕРНУТЬСЯ НАЗАД
           </button>
         </div>
-      ),
-    };
-  }
-
-  const {
-    name = '',
-    online = false,
-    avatar = '',
-    date = '',
-    messages = [],
-  } = data;
-
-  return {
-    loadingElement: null,
+      ) : null,
     navigate,
-    data: {
-      name,
-      online,
-      avatar,
-      date,
-      messages,
-    },
+    data: memoizedData,
   };
 };

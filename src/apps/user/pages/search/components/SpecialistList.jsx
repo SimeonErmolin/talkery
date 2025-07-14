@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { useGetSpecialists } from '../../../../../shared/hooks/api.js';
+import { useGetSpecialists } from '../../../../../shared/api/api.js';
 import TemplateCatalogCard from '../../../../../shared/components/TemplateSpecialistCard/TemplateCatalogCard.jsx';
 
-const SpecialistList = ({ activeTab }) => {
+const SpecialistList = ({ activeTab, userType }) => {
   const { data: specialists, isLoading } = useGetSpecialists();
 
   if (isLoading) return <p>Загрузка...</p>;
@@ -13,7 +13,12 @@ const SpecialistList = ({ activeTab }) => {
   return (
     <div className="cards-container">
       {specialistsList.slice(0, 3).map((item) => (
-        <TemplateCatalogCard key={item.id} id={item.id} place={'catalog'} />
+        <TemplateCatalogCard
+          key={item.id}
+          id={item.id}
+          place={'catalog'}
+          userType={userType}
+        />
       ))}
 
       {activeTab === 'psychologists' ? (
@@ -28,7 +33,12 @@ const SpecialistList = ({ activeTab }) => {
       ) : null}
 
       {specialistsList.slice(3).map((item) => (
-        <TemplateCatalogCard key={item.id} id={item.id} place={'catalog'} />
+        <TemplateCatalogCard
+          key={item.id}
+          id={item.id}
+          place={'catalog'}
+          userType={userType}
+        />
       ))}
     </div>
   );

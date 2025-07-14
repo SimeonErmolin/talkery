@@ -1,6 +1,6 @@
 import React from 'react';
 import ReviewTemplate from './ReviewTemplate.jsx';
-import { useGetReviews } from '../../../../../../shared/hooks/api.js';
+import { useGetReviews } from '../../../../../../shared/api/api.js';
 import NoDataMessage from '../../../../../../shared/components/NoDataMessage.jsx';
 
 const AllReviewsModal = () => {
@@ -14,7 +14,7 @@ const AllReviewsModal = () => {
       {reviews.length > 0 ? (
         <div className="specialist-reviews">
           {reviews.map((review) => (
-            <ReviewTemplate {...review} />
+            <ReviewTemplate {...review} key={review.id} />
           ))}
         </div>
       ) : (

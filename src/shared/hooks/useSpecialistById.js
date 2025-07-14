@@ -1,4 +1,4 @@
-import { useGetSpecialists } from './api';
+import { useGetSpecialists } from '../api/api.js';
 
 export const useSpecialistById = (id) => {
   const { data, isLoading, isError } = useGetSpecialists();

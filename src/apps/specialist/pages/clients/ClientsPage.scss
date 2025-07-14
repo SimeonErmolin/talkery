@@ -1,0 +1,116 @@
+.ClientsPage {
+  padding: 55px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title {
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &--total-clients {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      .count {
+        color: #474747;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+      }
+
+      .desc {
+        color: #A3A3A3;
+        font-size: 11px;
+        font-weight: 500;
+      }
+
+      img {
+        margin-right: 2px;
+        padding: 5px 5px 6px 6px;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .client-item {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      background: #EDEDED;
+      padding: 7px 20px;
+
+      &__user-info {
+        display: flex;
+        gap: 13px;
+        align-items: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 35px;
+        }
+
+        &--user {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+
+          p:first-child {
+            color: #262626;
+            font-size: 14px;
+            font-weight: 600;
+          }
+          p:last-child {
+            color: #7A7A7A;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &__payment-info {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        &--cost {
+          color: #7A7A7A;
+          font-size: 13px;
+          font-weight: 500;
+        }
+
+        &--chat {
+          margin-left: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    padding: 15px 20px;
+    width: fit-content;
+    color: #262626;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid #262626;
+  }
+}

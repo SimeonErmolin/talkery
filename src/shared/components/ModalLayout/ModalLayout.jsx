@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './ModalLayout.scss';
 
-const ModalLayout = ({ isOpen, onClose, contentClassName, children }) => {
+const ModalLayout = ({ isOpen, onClose, contentClassName = '', children }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';

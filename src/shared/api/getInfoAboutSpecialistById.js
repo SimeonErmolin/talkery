@@ -87,10 +87,10 @@ export const getInfoAboutSpecialistById = async (id) => {
           'Лесі Українки, психологічний факультет,\n' +
           'спеціальність «Практична психологія»',
         certificates: [
-          '/assets/icons/specialist-page/certificates/1.jpg',
-          '/assets/icons/specialist-page/certificates/2.jpg',
-          '/assets/icons/specialist-page/certificates/3.jpg',
-          '/assets/icons/specialist-page/certificates/4.jpg',
+          '/src/assets/icons/specialist-page/certificates/1.jpg',
+          '/src/assets/icons/specialist-page/certificates/2.jpg',
+          '/src/assets/icons/specialist-page/certificates/3.jpg',
+          '/src/assets/icons/specialist-page/certificates/4.jpg',
         ],
         courses:
           '• Український інститут когнітивно-\n' +
@@ -142,10 +142,10 @@ export const getInfoAboutSpecialistById = async (id) => {
           'Лесі Українки, психологічний факультет,\n' +
           'спеціальність «Практична психологія»',
         certificates: [
-          '/assets/icons/specialist-page/certificates/1.jpg',
-          '/assets/icons/specialist-page/certificates/2.jpg',
-          '/assets/icons/specialist-page/certificates/3.jpg',
-          '/assets/icons/specialist-page/certificates/4.jpg',
+          '/src/assets/icons/specialist-page/certificates/1.jpg',
+          '/src/assets/icons/specialist-page/certificates/2.jpg',
+          '/src/assets/icons/specialist-page/certificates/3.jpg',
+          '/src/assets/icons/specialist-page/certificates/4.jpg',
         ],
         courses:
           '• Український інститут когнітивно-\n' +

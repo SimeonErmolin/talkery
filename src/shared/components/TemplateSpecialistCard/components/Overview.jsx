@@ -3,7 +3,7 @@ import React from 'react';
 const Overview = ({ cost, sessions, likes }) => {
   const InfoItem = ({ icon, children }) => (
     <div className="specialist-info__item">
-      <img src={`/assets/icons/specialist-card/${icon}.svg`} alt="" />
+      <img src={`/src/assets/icons/specialist-card/${icon}.svg`} alt="" />
       <p>{children}</p>
     </div>
   );

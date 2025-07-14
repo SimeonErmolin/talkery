@@ -1,7 +1,6 @@
 import React from 'react';
-import './BonusesPage.scss';
-import { Link } from 'react-router';
-import { useGetPromoCodes } from '../../../../shared/hooks/api.js';
+import BonusesTemplate from '../../../../shared/components/bonuses/BonusesTemplate.jsx';
+import { useGetPromoCodes } from '../../../../shared/api/api.js';
 import NoDataMessage from '../../../../shared/components/NoDataMessage.jsx';
 
 const BonusesPage = () => {
@@ -12,22 +11,7 @@ const BonusesPage = () => {
   const hasPromoCodes = promoCodes.length > 0;
 
   return (
-    <div className="bonuses-page">
-      <div className="bonuses-page__affiliate">
-        <Link to={'/affiliate'}>
-          <img src="/src/assets/icons/bonuses/ticket.svg" alt="" />
-          <div>
-            <h4>Запросіть друзів до Talkery</h4>
-            <pre>
-              <p>
-                {'Поділіться 50% знижкою та\n' +
-                  'отримайте 10€ на свій рахунок'}
-              </p>
-            </pre>
-          </div>
-        </Link>
-      </div>
-
+    <BonusesTemplate userType={'client'}>
       <div className="bonuses-page__form">
         <h3>Додайте промокод</h3>
         <form
@@ -63,7 +47,7 @@ const BonusesPage = () => {
           <NoDataMessage place={'promo codes'} />
         )}
       </div>
-    </div>
+    </BonusesTemplate>
   );
 };
 

@@ -15,7 +15,7 @@ import ModalLayout from '../../../../shared/components/ModalLayout/ModalLayout.j
 import RegistrationTransferModal from '../../../../shared/components/RegistrationTransferModal/RegistrationTransferModal.jsx';
 import TemplateCatalogCard from '../../../../shared/components/TemplateSpecialistCard/TemplateCatalogCard.jsx';
 
-const SpecialistPage = () => {
+const SpecialistPage = ({ userType }) => {
   const { id } = useParams();
 
   const { modalIsOpened, openModal, closeModal } = useModal();
@@ -55,7 +55,7 @@ const SpecialistPage = () => {
 
   return (
     <div className="specialist-page">
-      <TemplateCatalogCard id={id} place={'card'} />
+      <TemplateCatalogCard id={id} place={'card'} userType={userType} />
 
       <div className="specialist-video">
         <button className="specialist-video__play-btn"></button>
@@ -81,7 +81,9 @@ const SpecialistPage = () => {
             />
           )}
 
-      {hasReview && <Reviews {...review} />}
+      {userType === 'client' && hasReview && (
+        <Reviews {...review} userType={userType} />
+      )}
 
       {isPsychologist && (hasLanguages || hasTherapies) && (
         <GeneralInformation language={language} therapy={therapy} />
@@ -89,9 +91,13 @@ const SpecialistPage = () => {
 
       {isPsychologist && hasExperience && <Accordion {...experience} />}
 
-      {isPsychologist && <ForYou />}
+      {userType === 'client' && isPsychologist && <ForYou />}
 
-      <BottomButtons navigate={navigate} openModal={openModal} />
+      <BottomButtons
+        navigate={navigate}
+        openModal={openModal}
+        userType={userType}
+      />
 
       <ModalLayout
         onClose={closeModal}

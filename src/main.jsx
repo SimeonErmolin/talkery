@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter } from 'react-router';
 import AppUser from './apps/user/AppUser.jsx';
 import AppSpecialist from './apps/specialist/AppSpecialist.jsx';
+import ScrollRestoration from './shared/utils/ScrollRestoration.jsx';
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename={basename}>{App}</BrowserRouter>
+      <BrowserRouter basename={basename}>
+        <ScrollRestoration />
+        {App}
+      </BrowserRouter>
     </QueryClientProvider>
   </React.StrictMode>
 );

@@ -1,31 +1,53 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 
-import GreetingPage from '../../apps/specialist/pages/greeting/GreetingPage.jsx';
-import SchedulePage from '../../apps/specialist/pages/schedule/SchedulePage.jsx';
 import ProfilePage from '../../apps/specialist/pages/user-profile/ProfilePage.jsx';
-import EditProfilePage from '../../apps/specialist/pages/edit-profile/EditProfilePage.jsx';
 import NotFoundPage from '../../shared/components/NotFoundPage/NotFoundPage.jsx';
 import MainLayout from '../../routes/MainLayout.jsx';
 import OnlyNavigation from '../../routes/OnlyNavigation.jsx';
-import LandingForTherapists from './pages/landing-for-therapists/LandingForTherapists.jsx';
+import EditProfileTemplate from '../../shared/components/EditProfile/EditProfileTemplate.jsx';
+import GreetingTemplate from '../../shared/components/Greeting/GreetingTemplate.jsx';
+import BonusesPage from './pages/bonuses/BonusesPage.jsx';
+import ChatsPage from '../../shared/components/chats/ChatsPage.jsx';
+import Chat from '../../shared/components/chats/components/Chat.jsx';
+import SpecialistPage from '../user/pages/specialist-page/SpecialistPage.jsx';
+import ClientsPage from './pages/clients/ClientsPage.jsx';
+import ScheduleTemplate from '../../shared/components/schedule/ScheduleTemplate.jsx';
 
 const AppSpecialist = () => {
   return (
     <Routes>
-      <Route index element={<LandingForTherapists />} />
+      <Route index element={<GreetingTemplate userType={'specialist'} />} />
 
-      <Route element={<GreetingPage />} />
-
-      <Route path={'/'} element={<MainLayout isSpecialist={true} />}>
-        <Route path={'/schedule'} element={<SchedulePage />} />
+      <Route path="/" element={<MainLayout isSpecialist={true} />}>
+        <Route
+          path="schedule"
+          element={<ScheduleTemplate userType="specialist" userId={'1'} />}
+        />
+        <Route path="bonuses" element={<BonusesPage />} />
+        <Route path="chats" element={<ChatsPage userId="1" />} />
+        <Route
+          path="my-profile/:id"
+          element={<SpecialistPage userType={'specialist'} />}
+        />
+        <Route path="clients" element={<ClientsPage userId="1" />} />
       </Route>
 
-      <Route path={'/'} element={<OnlyNavigation isSpecialist={true} />}>
-        <Route path={'/user-profile'} element={<ProfilePage />} />
+      <Route path="chats/:id" element={<Chat />} />
+
+      <Route path="/" element={<OnlyNavigation isSpecialist={true} />}>
+        <Route path="user-profile" element={<ProfilePage />} />
       </Route>
 
-      <Route path={'/edit-profile'} element={<EditProfilePage />} />
+      <Route
+        path="edit-profile"
+        element={
+          <EditProfileTemplate
+            userType="specialist"
+            avatarUrl="/src/assets/mockPhotos/Katerina.jpeg"
+          />
+        }
+      />
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

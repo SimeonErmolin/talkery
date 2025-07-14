@@ -11,6 +11,9 @@ const notFoundMessage = {
   'successful payments': 'Немає успішних платежів',
   'cancelled payments': 'Немає скасованих платежів',
   'data on replenishment': 'Немає даних про поповнення',
+  customerPayments: 'Немає платежів',
+  'data on payments': 'Немає виплат',
+  'data on clients': 'Немає клієнтів',
 };
 
 const NoDataMessage = ({ place, margin }) => {
